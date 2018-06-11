@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/Controllers/DuyetDT_SV.java=UTF-8
+encoding//src/com/Controllers/GV_DuyetDT_SV.java=UTF-8
+encoding//src/com/Controllers/Login.java=UTF-8
+encoding//src/com/dao/Admin_DuAnMoi_DAO.java=UTF-8
+encoding//src/com/dao/GV_DuAnMoi_DAO.java=UTF-8
+encoding//src/com/dao/LoginDAO.java=UTF-8
+encoding//src/com/dao/SV_DangkiDeTai_DAO.java=UTF-8
+encoding//src/com/dao/SV_NopDT_DAO.java=UTF-8
+encoding//src/com/dao/ThongTinCN_DAO.java=UTF-8

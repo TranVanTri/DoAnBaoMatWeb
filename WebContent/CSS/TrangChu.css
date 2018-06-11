@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+/*.header {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#header{
+	height: 200px;
+}*/
+
+/*Menutop*/
+
+header{
+	float: left;
+	width: 100%;
+	height: 60px;
+	background: #545050;
+	margin-top: 2px;
+}
+
+header >a{
+	float: left;
+	color: #fff;
+	line-height: 100px;
+	margin-left: 10px;
+	font-size: 36px;
+	display: none;
+}
+
+ul{
+	list-style: none;
+	width: 100%;
+	height: 60px;
+	float: right;
+	margin: 0;
+    padding: 0;
+}
+
+li{
+	display: inline;
+	float: left;
+	width: auto;
+	height: 60px;
+	background: #666;
+	margin-right: 1px;
+}
+
+li a{
+	display: block;
+	float: left;
+	padding: 0px 20px;
+	line-height: 60px;
+	height: 60px;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+a{
+	text-decoration: none;
+	
+}
+
+ul li a:hover{
+	background: #CCCCCC;
+	text-decoration: none;
+	color: black;
+}
+
+#i-nav{
+	display: none;
+	position: absolute;
+	margin-top: 15px;
+	right: 26px;
+	width: 32px;
+	height: 32px;
+}
+
+#show{
+	display: block;
+}
+
+#login{
+	float:right;
+	margin: 0px;
+}
+
+#register{
+	float:right;
+	margin: 0px;
+	border-right: 1px solid;
+}
+
+
+#search{
+	padding: 12px 0px 0px 20px;
+    width: 350px;
+    float: left;
+	
+}
+#search .btn-default{
+	height: 34px;
+}
+
+.dropbtn {
+    background-color: #666;
+    color: white;
+    padding: 19px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+	text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	line-height: 40px;
+	width: 100%;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #CCCCCC;
+	color: black;
+}
+
+@media (max-width: 1024px){
+	/*Menutop*/
+	header{
+		height: 60px;
+	}
+		
+	#i-nav, #danhmuc #i-nav2{
+		display: block;
+	}
+	
+	header >a{
+		width: 100%;
+		text-align: center;
+		margin-left:5px;
+		height: 60px;
+		line-height: 60px;
+		display: block;
+	}
+	
+	ul{
+		display: none;
+	}
+	
+	ul li{
+		width: 100%;	
+	}
+	
+	ul li a{
+		width: 100%;
+		text-align: center;
+		outline: solid #ccc 1px;
+		padding: 0px;
+	}
+	
+	ul li a:hover{
+		background: #CCCCCC;
+		text-decoration: none;
+		color: black;
+	}
+	
+	#search{
+	padding: 2px 0px 0px 0px;
+    width: 100%;
+    
+	}
+	
+	.dropdown{
+		text-align: center;
+		width: 100%;
+		
+		outline: solid #ccc 1px;
+	}
+	
+	.dropbtn {
+    	width: 100%;
+	}
+	
+	.dropdown-content{
+		width: 50%;
+		margin: 0 25%;
+		
+		
+	}
+	
+	/*Menuleft*/
+	
+	#mainleft .dropdown-content{
+		display: none;
+		width: 100%;
+		margin: 0;
+	}
+	
+	/*Menuright*/
+	
+	#pagefb{
+		display: none;
+	}
+}
+
+@media (min-width: 1024px){
+	#i-nav{
+		display: none;
+	}
+	
+	header{
+		max-height: 60px;
+	}
+	
+	#mainleft .dropdown {
+		width: 100%;
+	}
+	#mainleft .dropbtn {
+		width: 100%;
+	}
+	#mainleft .dropdown-content{
+		display: block;
+	}
+	
+}
+
+
+/*Anh chuyen dong*/
+#carousel-indicators {
+    bottom: 20px;
+    margin-left: -20px;
+}
+
+#myCarousel{
+	margin-top: 2px;
+}
+
+/*Main*/
+/*Main left*/
+
+#mainleft .dropbtn {
+    background-color: #194d58;
+    color: white;
+    padding: 19px;
+    font-size: 16px;
+    border-radius: 3px;
+	width: 100%;
+}
+
+#mainleft .dropdown {
+    position: relative;
+    display: inline-block;
+	width: 100%;
+	height: 268px;
+    margin: 2px 0px;
+}
+
+#mainleft .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+	text-align: left;
+}
+
+#mainleft .dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+	line-height: 40px;
+	width: 100%;
+	font-size: 16px;
+	text-indent: 20px;
+}
+
+#mainleft .dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+#mainleft .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*Main center*/
+
+#maincenter{
+	margin: 0px;
+	
+	
+	margin-top: 2px;
+}
+
+#maincenter .dropbtn {
+    background-color: #194d58;
+    color: white;
+    padding: 19px;
+    font-size: 16px;
+    border-radius: 3px;
+	width: 100%;
+	
+}
+
+#ND_thongtinmoi{
+	padding-left: 10px;
+}
+
+#ND_thongtinmoi .taiday:hover{
+	color: orange;
+}
+
+#ND_thongtinmoi .chitiet:hover{
+	color: orange;
+}
+
+#maincenter #Control_next_prev{
+    float: right;
+    margin: 40px 90px 0px 0px;
+}
+
+#maincenter #Control_next_prev a{
+	margin-right: 10px;
+}
+
+#maincenter #Control_next_prev a:hover{
+	color: orange;
+}
+
+.active{
+	background: orange;
+	border-radius: 10px;
+}
+.hover_red:hover{
+	color: red;
+	text-decoration: none;
+
+}
+
+.date_time{
+	font-size: 10px;
+}
+
+
+/*Main right*/
+
+#mainright{
+	margin-top: 2px;
+	
+}
+
+#mainright .dropbtn{
+	background-color: #194d58;
+    color: white;
+    padding: 19px;
+    font-size: 16px;
+    border-radius: 3px;
+	width: 100%;
+}
+
+#mainright #ND_thongtinhot{
+	
+	background: #E6E9E9;
+	padding: 10px 18px;
+	margin-top: 2px;
+}
+
+#mainright #ND_thongtinhot .tt_hot:hover{
+	color: #E8BA35;
+}
+
+#my_Carousel{
+	margin-top: 2px;
+	border: 1px solid #B1A9AA;
+	border-radius: 2px;
+}
+
+#mainright #pagefb{
+	float: right;
+	border: 1px solid #B1A9AA;
+	margin-top: 2px;
+	position: relative;
+	
+}
+
+/*Main*/
+
+/*Footer*/
+
+#footer hr{
+	border-top: 3px solid #eee;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
