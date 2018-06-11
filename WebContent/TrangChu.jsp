@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
 <title>Home</title>
 
 
@@ -75,12 +75,12 @@
 
 
 					<a class="left carousel-control" href="#myCarousel"
-						data-slide="prev"> <span
-						class="glyphicon glyphicon-chevron-left"></span> <span
+						data-slide="prev"><span
+							class="glyphicon glyphicon-chevron-left"></span> <span
 						class="sr-only">Previous</span>
 					</a> <a class="right carousel-control" href="#myCarousel"
-						data-slide="next"> <span
-						class="glyphicon glyphicon-chevron-right"></span> <span
+						data-slide="next"><span
+							class="glyphicon glyphicon-chevron-right"></span> <span
 						class="sr-only">Next</span>
 					</a>
 				</div>
@@ -408,19 +408,7 @@
 								</p>
 								
 							</div>
-							<div class="col-lg-8">
-								<div class="text-center center-block">
-									<br /> <a href=""><i
-										id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-									<a href="https://twitter.com/bootsnipp"><i id="social-tw"
-										class="fa fa-twitter-square fa-3x social"></i></a> <a
-										href="https://plus.google.com/+Bootsnipp-page"><i
-										id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-									<a href="mailto:bootsnipp@gmail.com"><i id="social-em"
-										class="fa fa-envelope-square fa-3x social"></i></a>
-								</div>
-							</div>
-
+							
 						</div>
 						<hr>
 				</div>

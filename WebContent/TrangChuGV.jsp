@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
 <title>Trang chủ giảng viên</title>
 <link type="text/css" rel="stylesheet" href="CSS/SV_TrangChu.css"/>
 <link rel="stylesheet" href="CSS/bootstrap.min.css" />
@@ -162,147 +162,147 @@
 									<tbody>
 										<tr>
 											<td>							    
-												<a class="tt_hot" href="Messages.aspx?id=4763"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc nghỉ lễ ngày 04/10/2017</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc nghỉ lễ ngày 04/10/2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>						       
-												<a class="tt_hot" href="Messages.aspx?id=4762"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo lịch thực tập sư phạm học kỳ 1 năm 2017-2018</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo lịch thực tập sư phạm học kỳ 1 năm 2017-2018</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>						    	
-												 <a class="tt_hot" href="Messages.aspx?id=4760"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy kết quả đăng ký anh văn 1</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy kết quả đăng ký anh văn 1</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4759"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần Anh văn học kỳ 1 năm 2017-2018</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần Anh văn học kỳ 1 năm 2017-2018</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4755"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo đăng ký học phần Anh văn 1 qua mạng học kỳ 1 năm học 2017 – 2018</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo đăng ký học phần Anh văn 1 qua mạng học kỳ 1 năm học 2017 – 2018</a><br><br>
 											 </td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4754"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo công bố kết quả thi Anh văn đầu vào ngày 10/09/2017</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo công bố kết quả thi Anh văn đầu vào ngày 10/09/2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4753"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch đổi phòng ngày 26 và 27 /09/2017 - Phòng A114 và A217</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch đổi phòng ngày 26 và 27 /09/2017 - Phòng A114 và A217</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4752"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc thay đổi phòng học (Các phòng A311,A312,A313,A314,A315)</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc thay đổi phòng học (Các phòng A311,A312,A313,A314,A315)</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												  <a class="tt_hot" href="Messages.aspx?id=4747"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hoãn nhận chứng chỉ anh văn đầu ra</a><br><br>
+												  <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hoãn nhận chứng chỉ anh văn đầu ra</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4745"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 1 năm 2017-2018 (lần 2)</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 1 năm 2017-2018 (lần 2)</a><br><br>
 											 </td>
 										</tr>
 										<tr>
 											<td>
-												 <a href="Messages.aspx?id=4740"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 1 năm 2017-2018</a><br><br>
+												 <a href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 1 năm 2017-2018</a><br><br>
 												 </td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4739"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc dự kiến các lớp học phần bị hủy học kỳ 1 năm 2017-2018</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc dự kiến các lớp học phần bị hủy học kỳ 1 năm 2017-2018</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4737">Thông báo về điểm thi Anh văn đầu ra thi ngày 30/07/2017 và ngày 06/08/2017</a><br><br>
+												 <a class="tt_hot" href="">Thông báo về điểm thi Anh văn đầu ra thi ngày 30/07/2017 và ngày 06/08/2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4736"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo sinh viên chưa ký tên trong bảng điểm giáo dục quốc phòng an ninh</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo sinh viên chưa ký tên trong bảng điểm giáo dục quốc phòng an ninh</a><br><br>
 											 </td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4727"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo hủy học phần phương pháp tính</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo hủy học phần phương pháp tính</a><br><br>
 											 </td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4725"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch học Giáo dục Quốc phòng học kỳ 3 năm 2016-2017</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch học Giáo dục Quốc phòng học kỳ 3 năm 2016-2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4724"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 3 năm học 2016-2017 do số lượng đăng ký quá ít</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 3 năm học 2016-2017 do số lượng đăng ký quá ít</a><br><br>
 											 </td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4722"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Danh sách các lớp học phần dự kiến hủy do số lượng sinh viên đăng ký quá ít Năm học 2016-2017 học kỳ 3</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Danh sách các lớp học phần dự kiến hủy do số lượng sinh viên đăng ký quá ít Năm học 2016-2017 học kỳ 3</a><br><br>
 											 </td>
 										</tr>
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4721"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo: Biên chế các đại đội tham gia học Giáo dục Quốc phòng - An ninh</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo: Biên chế các đại đội tham gia học Giáo dục Quốc phòng - An ninh</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4719"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo kế hoạch Đăng ký môn học qua mạng học kỳ 3 năm học 2016 - 2017</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo kế hoạch Đăng ký môn học qua mạng học kỳ 3 năm học 2016 - 2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4718"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về điểm thi Anh văn đầu ra thi ngày 28/05/2017 và 04/06/2017</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về điểm thi Anh văn đầu ra thi ngày 28/05/2017 và 04/06/2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4715"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo kế hoạch học môn học Giáo dục Quốc phòng –An ninh cho khóa 2016</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo kế hoạch học môn học Giáo dục Quốc phòng –An ninh cho khóa 2016</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4690"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về điểm thi Anh văn đầu ra thi ngày 05/03/2017 và 12/03/2017</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về điểm thi Anh văn đầu ra thi ngày 05/03/2017 và 12/03/2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4682"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo thời gian SV đi thực tập sư phạm  học kỳ 2 năm học 2016-2017</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo thời gian SV đi thực tập sư phạm  học kỳ 2 năm học 2016-2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4680"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc chuyển phòng ngày 25/02/2017</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc chuyển phòng ngày 25/02/2017</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4680"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc dự kiến các lớp học phần bị hủy học kỳ 2 năm 2016-2017 (lần 2)</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc dự kiến các lớp học phần bị hủy học kỳ 2 năm 2016-2017 (lần 2)</a><br><br>
 											</td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4671"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 2 năm học 2016-2017 do số lượng đăng ký quá ít</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 2 năm học 2016-2017 do số lượng đăng ký quá ít</a><br><br>
 											 </td>
 										</tr>						
 										<tr>
 											<td>
-												<a class="tt_hot" href="Messages.aspx?id=4670"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy kết quả đăng ký môn học học kỳ 2 năm học 2016-2017</a><br><br>
+												<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy kết quả đăng ký môn học học kỳ 2 năm học 2016-2017</a><br><br>
 											 </td>
 										</tr>
 										<tr>
 											<td>
-												 <a class="tt_hot" href="Messages.aspx?id=4667"><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo hủy danh sách sinh viên hệ đại trà đăng ký môn Quản lý dự án nhóm CLC</a><br><br>
+												 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo hủy danh sách sinh viên hệ đại trà đăng ký môn Quản lý dự án nhóm CLC</a><br><br>
 											</td>
 										</tr>
 										
@@ -357,15 +357,7 @@
 								<p style="text-align: center;padding-left: 10px;"><strong>Email id: Tvtri1997@gmail.com</strong></p>
 								<p style="text-align: center;padding-right: 80px;"><strong>Design by Van Tri</strong></p>
 							</div>
-							<div class="col-lg-8">
-								<div class="text-center center-block">
-									<br />
-									<a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-									<a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-									<a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-									<a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-								</div>
-							</div>
+							
 
 						</div>
 					<hr>

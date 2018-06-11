@@ -4,15 +4,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
 
 <link type="text/css" rel="stylesheet" href="CSS/home.css"/>
 <link type="text/css" rel="stylesheet" href="CSS/SV_TrangChu.css" />
 <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+
 <link rel="stylesheet" href="CSS/font-awesome.min.css"/>
 
-
-			<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">  -->
 <title>Trang chủ admin</title>
 </head>
 <body>
@@ -515,18 +514,7 @@
 								</p>
 
 							</div>
-							<div class="col-lg-8">
-								<div class="text-center center-block">
-									<br /> <a href=""><i
-										id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-									<a href="https://twitter.com/bootsnipp"><i id="social-tw"
-										class="fa fa-twitter-square fa-3x social"></i></a> <a
-										href="https://plus.google.com/+Bootsnipp-page"><i
-										id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-									<a href="mailto:bootsnipp@gmail.com"><i id="social-em"
-										class="fa fa-envelope-square fa-3x social"></i></a>
-								</div>
-							</div>
+							
 
 						</div>
 						<hr>
@@ -538,8 +526,8 @@
 	</div>
 
 
-	<script src="JS/jquery.js" type="text/javascript"></script>
-	<script src="JS/bootstrap.min.js" type="text/javascript"></script>
+	<script src="JS/jquery.js" ></script>
+	<script src="JS/bootstrap.min.js" ></script>
 	<script>
 		$(document).ready(function() {
 			$('#i-nav').click(function() {
