@@ -7,11 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Home</title>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
 <link type="text/css" rel="stylesheet" href="CSS/SV_TrangChu.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/bootstrap.min.css"/>
+		<link rel="stylesheet" href="CSS/font-awesome.min.css"/>
+
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -409,7 +410,7 @@
 							</div>
 							<div class="col-lg-8">
 								<div class="text-center center-block">
-									<br /> <a href="https://www.facebook.com/bootsnipp"><i
+									<br /> <a href=""><i
 										id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
 									<a href="https://twitter.com/bootsnipp"><i id="social-tw"
 										class="fa fa-twitter-square fa-3x social"></i></a> <a
@@ -428,10 +429,8 @@
 	</div>
 
 
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="JS/jquery.js" type="text/javascript"></script>
+	<script src="JS/bootstrap.min.js" type="text/javascript"></script>
 
 	<script>
 		$(document).ready(function() {

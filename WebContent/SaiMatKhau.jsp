@@ -11,6 +11,9 @@
 <title>Thay đổi mật khẩu thất bại</title>
 </head>
 <body>
+
+	<script src="JS/jquery.js" type="text/javascript"></script>
+	<script src="JS/bootstrap.min.js" type="text/javascript"></script>
 	<%
 	String nameStu="";
 	String nameTea="";

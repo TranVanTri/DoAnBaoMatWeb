@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+	pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<link type="text/css" rel="stylesheet" href="CSS/home.css">
-<link type="text/css" rel="stylesheet" href="CSS/SV_TrangChu.css"/>
-<link rel="stylesheet" href="CSS/bootstrap.min.css">
-<link rel="stylesheet" href="CSS/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="CSS/home.css"/>
+<link type="text/css" rel="stylesheet" href="CSS/SV_TrangChu.css" />
+<link rel="stylesheet" href="CSS/bootstrap.min.css" />
+<link rel="stylesheet" href="CSS/font-awesome.min.css"/>
 
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
-
+			<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">  -->
 <title>Trang chủ admin</title>
 </head>
 <body>
 	<div class="container-fluid">
-		
+
 		<div class="row" id="menutop">
 			<%--MenuTop--%>
 			<div class="col-lg-12">
@@ -29,71 +28,76 @@
 					<li><a href="#">Nghiên cứu</a></li>
 					<li><a href="#">Liên hệ</a></li>
 
-					<li id="login" style="float:right;	margin: 0px;"><a  data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Đăng nhập</a></li>
-	
-						<!-- Modal -->
-						<div id="myModal" class="modal fade" role="dialog">
-							<div class="modal-dialog">
-	
-								<!-- Modal content-->
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal">&times;</button>
-										<h4 class="modal-title">Đăng nhập</h4>
-									</div>
-									<div class="modal-body">
-										<p>
-												<!-- login -->
-											<form id="login_form" class="form-horizontal"
-												action="Login" style="padding: 30px" method="post" onsubmit="return Validate()" name="vform">
-												<div class="form-group">
-													<legend>
-														<h2 style="text-align: center;">Login</h2>
-													</legend>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-4" for="pwd">Username:</label>
-													<div class="col-sm-8">
-														<input type="text" class="form-control" name="username" id="username"
-															placeholder="Enter username"><span class="error"
-															id="error_form_username"></span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-4" for="pwd">Password:</label>
-													<div class="col-sm-8">
-														<input type="password" class="form-control" name="password" id="password" autocomplete="off"
-															placeholder="Enter password" /><span class="error"
-															id="error_form_pass" ></span>
-													</div>
-												</div>
-												<div class="form-group">
-													<div class="col-sm-offset-4 col-sm-10">
-														<div class="checkbox">
-															<label><input type="checkbox"> Remember me</label>
-														</div>
-													</div>
-												</div>
-												<div class="form-group">
-													<div class="col-sm-offset-4 col-sm-10">
-														<input type="submit" class="btn btn-primary" value="Login"
-															style="width: 80px;" />
-													</div>
-												</div>
-											</form>
-										</p>
-									</div>
+					<li id="login" style="float: right; margin: 0px;"><a
+						data-toggle="modal" data-target="#myModal"><span
+							class="glyphicon glyphicon-user"></span> Đăng nhập</a></li>
+
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Đăng nhập</h4>
 								</div>
-	
+								<div class="modal-body">
+									<p>
+										<!-- login -->
+										<form id="login_form" class="form-horizontal" action="Login"
+											style="padding: 30px" method="post"
+											onsubmit="return Validate()" name="vform">
+											<div class="form-group">
+												<legend>
+													<h2 style="text-align: center;">Login</h2>
+												</legend>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-sm-4" for="pwd">Username:</label>
+												<div class="col-sm-8">
+													<input type="text" class="form-control" name="username"
+														id="username" placeholder="Enter username"><span
+														class="error" id="error_form_username"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-sm-4" for="pwd">Password:</label>
+												<div class="col-sm-8">
+													<input type="password" class="form-control" name="password"
+														id="password" autocomplete="off"
+														placeholder="Enter password" /><span class="error"
+														id="error_form_pass"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-offset-4 col-sm-10">
+													<div class="checkbox">
+														<label><input type="checkbox"> Remember me</label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-offset-4 col-sm-10">
+													<input type="submit" class="btn btn-primary" value="Login"
+														style="width: 80px;" />
+												</div>
+											</div>
+										</form>
+									</p>
+								</div>
 							</div>
+
 						</div>
+					</div>
 
 
 					<form id="search">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search">
 								<div class="input-group-btn">
-									<button class="btn btn-default" type="submit" title="Search" style="height: 34px;">
+									<button class="btn btn-default" type="submit" title="Search"
+										style="height: 34px;">
 										<i class="glyphicon glyphicon-search"></i>
 									</button>
 								</div>
@@ -141,33 +145,45 @@
 						</div>
 					</div> -->
 					<div class="carousel-inner">
-					  <div class="item active">
-						<img src="image/banner/0.jpg" alt="gene" style="width:100%;">
-						<div class="carousel-caption">
-						  <h3><a href="">Tế bào gốc hy vọng cho bênh nhân tiểu đường</a></h3>
+						<div class="item active">
+							<img src="image/banner/0.jpg" alt="gene" style="width: 100%;">
+								<div class="carousel-caption">
+									<h3>
+										<a href="">Tế bào gốc hy vọng cho bênh nhân tiểu đường</a>
+									</h3>
+								</div>
 						</div>
-					  </div>
-					  <div class="item">
-						<img src="image/banner/1.jpg" alt="notron" style="width:100%;">		
-						<div class="carousel-caption">
-						  <h3><a href="">Các nhà khoa học tìm ra tế bào não điều khiển tốc độ lão hóa</a></h3>
-						</div>				  
-					  </div>
-					  <div class="item">
-						<img src="image/banner/2.jpg" alt="black hole" style="width:100%;">
-						<div class="carousel-caption">
-						  <h3><a href="">Lỗ giun và du hành thời gian</a></h3>
+						<div class="item">
+							<img src="image/banner/1.jpg" alt="notron" style="width: 100%;">
+								<div class="carousel-caption">
+									<h3>
+										<a href="">Các nhà khoa học tìm ra tế bào não điều khiển
+											tốc độ lão hóa</a>
+									</h3>
+								</div>
+						</div>
+						<div class="item">
+							<img src="image/banner/2.jpg" alt="black hole"
+								style="width: 100%;">
+								<div class="carousel-caption">
+									<h3>
+										<a href="">Lỗ giun và du hành thời gian</a>
+									</h3>
 
+								</div>
 						</div>
-					  </div>
-					  <div class="item">
-						<img src="image/banner/3.jpg" alt="space time" style="width:100%;">
-						<div class="carousel-caption">
-						  <h3><a href="">Lần đầu tiên phát hiện các sóng hấp dẫn của Einstein trong không gian</a></h3>
+						<div class="item">
+							<img src="image/banner/3.jpg" alt="space time"
+								style="width: 100%;">
+								<div class="carousel-caption">
+									<h3>
+										<a href="">Lần đầu tiên phát hiện các sóng hấp dẫn của
+											Einstein trong không gian</a>
+									</h3>
+								</div>
 						</div>
-					  </div>
 					</div>
-					
+
 
 
 					<a class="left carousel-control" href="#myCarousel"
@@ -188,292 +204,296 @@
 			<div class="col-md-3">
 				<div class="mainright">
 					<img src="image/thongbao.jpg" style="width: 100%">
-					
-					<div class="row">
-						<div class="col-lg-12">
-							<div id="ND_thongtinhot">
-								<marquee scrolldelay="6" scrollamount="2" id="banner" onmouseover="this.stop()" onmouseout="this.start()" direction="up" height="300">
-									<table id="tb_nd_thongtinhot" cellspacing="0" border="0" style="border-collapse:collapse;">
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div id="ND_thongtinhot">
+									<marquee scrolldelay="6" scrollamount="2" id="banner"
+										onmouseover="this.stop()" onmouseout="this.start()"
+										direction="up" height="300">
+									<table id="tb_nd_thongtinhot" cellspacing="0" border="0"
+										style="border-collapse: collapse;">
 										<tbody>
 											<tr>
-												<td>							    
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc nghỉ lễ ngày 04/10/2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc nghỉ lễ ngày 04/10/2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>						       
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo lịch thực tập sư phạm học kỳ 1 năm 2017-2018</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo lịch thực tập sư phạm học kỳ 1 năm 2017-2018</a><br><br></td>
 											</tr>
 											<tr>
-												<td>						    	
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy kết quả đăng ký anh văn 1</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc hủy kết quả đăng ký anh văn 1</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần Anh văn học kỳ 1 năm 2017-2018</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc hủy các lớp học phần Anh văn học kỳ 1 năm
+														2017-2018</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo đăng ký học phần Anh văn 1 qua mạng học kỳ 1 năm học 2017 – 2018</a><br><br>
-												 </td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo đăng ký học phần Anh văn 1 qua mạng học kỳ 1 năm học
+														2017 – 2018</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo công bố kết quả thi Anh văn đầu vào ngày 10/09/2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo công bố kết quả thi Anh văn đầu vào ngày 10/09/2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch đổi phòng ngày 26 và 27 /09/2017 - Phòng A114 và A217</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch
+														đổi phòng ngày 26 và 27 /09/2017 - Phòng A114 và A217</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc thay đổi phòng học (Các phòng A311,A312,A313,A314,A315)</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc thay đổi phòng học (Các phòng
+														A311,A312,A313,A314,A315)</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													  <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hoãn nhận chứng chỉ anh văn đầu ra</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc hoãn nhận chứng chỉ anh văn đầu ra</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 1 năm 2017-2018 (lần 2)</a><br><br>
-												 </td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc hủy các lớp học phần học kỳ 1 năm 2017-2018
+														(lần 2)</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 1 năm 2017-2018</a><br><br>
-													 </td>
+												<td><a href=""><i class="fa fa-caret-right"
+														style="margin-right: 5px"></i>Thông báo về việc hủy các
+														lớp học phần học kỳ 1 năm 2017-2018</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc dự kiến các lớp học phần bị hủy học kỳ 1 năm 2017-2018</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc dự kiến các lớp học phần bị hủy học kỳ 1 năm
+														2017-2018</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href="">Thông báo về điểm thi Anh văn đầu ra thi ngày 30/07/2017 và ngày 06/08/2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href="">Thông báo về điểm thi
+														Anh văn đầu ra thi ngày 30/07/2017 và ngày 06/08/2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo sinh viên chưa ký tên trong bảng điểm giáo dục quốc phòng an ninh</a><br><br>
-												 </td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo sinh viên chưa ký tên trong bảng điểm giáo dục quốc
+														phòng an ninh</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo hủy học phần phương pháp tính</a><br><br>
-												 </td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo hủy học phần phương pháp tính</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch học Giáo dục Quốc phòng học kỳ 3 năm 2016-2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Lịch
+														học Giáo dục Quốc phòng học kỳ 3 năm 2016-2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 3 năm học 2016-2017 do số lượng đăng ký quá ít</a><br><br>
-												 </td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc hủy các lớp học phần học kỳ 3 năm học
+														2016-2017 do số lượng đăng ký quá ít</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Danh sách các lớp học phần dự kiến hủy do số lượng sinh viên đăng ký quá ít Năm học 2016-2017 học kỳ 3</a><br><br>
-												 </td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Danh
+														sách các lớp học phần dự kiến hủy do số lượng sinh viên
+														đăng ký quá ít Năm học 2016-2017 học kỳ 3</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo: Biên chế các đại đội tham gia học Giáo dục Quốc phòng - An ninh</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo: Biên chế các đại đội tham gia học Giáo dục Quốc phòng
+														- An ninh</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo kế hoạch Đăng ký môn học qua mạng học kỳ 3 năm học 2016 - 2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo kế hoạch Đăng ký môn học qua mạng học kỳ 3 năm học
+														2016 - 2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về điểm thi Anh văn đầu ra thi ngày 28/05/2017 và 04/06/2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về điểm thi Anh văn đầu ra thi ngày 28/05/2017 và
+														04/06/2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo kế hoạch học môn học Giáo dục Quốc phòng –An ninh cho khóa 2016</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo kế hoạch học môn học Giáo dục Quốc phòng –An ninh cho
+														khóa 2016</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về điểm thi Anh văn đầu ra thi ngày 05/03/2017 và 12/03/2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về điểm thi Anh văn đầu ra thi ngày 05/03/2017 và
+														12/03/2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo thời gian SV đi thực tập sư phạm  học kỳ 2 năm học 2016-2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo thời gian SV đi thực tập sư phạm học kỳ 2 năm học
+														2016-2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc chuyển phòng ngày 25/02/2017</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc chuyển phòng ngày 25/02/2017</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc dự kiến các lớp học phần bị hủy học kỳ 2 năm 2016-2017 (lần 2)</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc dự kiến các lớp học phần bị hủy học kỳ 2 năm
+														2016-2017 (lần 2)</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy các lớp học phần học kỳ 2 năm học 2016-2017 do số lượng đăng ký quá ít</a><br><br>
-												 </td>
-											</tr>						
-											<tr>
-												<td>
-													<a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo về việc hủy kết quả đăng ký môn học học kỳ 2 năm học 2016-2017</a><br><br>
-												 </td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc hủy các lớp học phần học kỳ 2 năm học
+														2016-2017 do số lượng đăng ký quá ít</a><br><br></td>
 											</tr>
 											<tr>
-												<td>
-													 <a class="tt_hot" href=""><i class="fa fa-caret-right" style="margin-right: 5px"></i>Thông báo hủy danh sách sinh viên hệ đại trà đăng ký môn Quản lý dự án nhóm CLC</a><br><br>
-												</td>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo về việc hủy kết quả đăng ký môn học học kỳ 2 năm học
+														2016-2017</a><br><br></td>
 											</tr>
-											
+											<tr>
+												<td><a class="tt_hot" href=""><i
+														class="fa fa-caret-right" style="margin-right: 5px"></i>Thông
+														báo hủy danh sách sinh viên hệ đại trà đăng ký môn Quản lý
+														dự án nhóm CLC</a><br><br></td>
+											</tr>
+
 										</tbody>
 									</table>
-								</marquee> 
+									</marquee>
+								</div>
 							</div>
-						</div>
-						
-					</div><!--Noi dung thong tin hot-->
+
+						</div> <!--Noi dung thong tin hot-->
 				</div>
 			</div>
 
 			<!-- mainleft -->
 			<div class="col-md-9">
 				<div id="headtext">
-					<h3><a href="">Tin tức</a></h3>
+					<h3>
+						<a href="">Tin tức</a>
+					</h3>
 				</div>
 				<div class="grid">
-				  <div class="col-md-6" id="card">
-					<figure class="effect-apollo" style="width: 100%">
-						<img src="image/neutron.jpg" alt="img18"/>
-						<figcaption>
-							<p>LIGO's latest hit: Merging neutron stars</p>
-							<a href="#">View more</a>
-						</figcaption>
-							
-					</figure>
-					<div class="captext">
-						<span><a href="">Hợp nhất sao neutron tạo ra sóng hấp dẫn và ánh sáng thiên thể hiển thị.</a></span>
-					</div>	
-				  </div>
-				  <div class="col-md-6" id="card">
-					<figure class="effect-apollo" style="width: 100%">
-						<img src="image/bd.jpg" alt="img22"/>
-						<figcaption>
-							<!-- <h2>Strong <span>Apollo</span></h2> -->
-							<p>When a drop of fluid is disapened on a bath</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<div class="captext">
-						<span><a href="">Đã có lời lý giải tại sao một hạt nước lại có thể lăn trên mặt nước mà không hòa vào nhau</a></span>
+					<div class="col-md-6" id="card">
+						<figure class="effect-apollo" style="width: 100%"> <img
+							src="image/neutron.jpg" alt="img18" /> <figcaption>
+						<p>LIGO's latest hit: Merging neutron stars</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Hợp nhất sao neutron tạo ra sóng hấp
+									dẫn và ánh sáng thiên thể hiển thị.</a></span>
+						</div>
 					</div>
-				  </div>
+					<div class="col-md-6" id="card">
+						<figure class="effect-apollo" style="width: 100%"> <img
+							src="image/bd.jpg" alt="img22" /> <figcaption> <!-- <h2>Strong <span>Apollo</span></h2> -->
+						<p>When a drop of fluid is disapened on a bath</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Đã có lời lý giải tại sao một hạt
+									nước lại có thể lăn trên mặt nước mà không hòa vào nhau</a></span>
+						</div>
+					</div>
 				</div>
 				<div class="grid">
-				  <div class="col-md-6" id="card">
-					<figure class="effect-apollo" style="width: 100%">
-						<img src="image/StellaratorLead.jpg" alt="img18"/>
-						<figcaption>
-							<!-- <h2>Strong <span>Apollo</span></h2> -->
-							<p>The bizarre reactor that might save nuclear fusion</p>
-							<a href="#">View more</a>
-						</figcaption>
-							
-					</figure>
-					<div class="captext">
-						<span><a href="">Lò phản ứng có thể tiết kiệm hạt nhân nhiệt hạch</a></span>
-					</div>	
-				  </div>
-				  <div class="col-md-6" id="card">
-					<figure class="effect-apollo" style="width: 100%">
-						<img src="image/tbgoc.jpg" alt="img22"/>
-						<figcaption>
-							<!-- <h2>Strong <span>Apollo</span></h2> -->
-							<p>Reprogrammed stem cells work as well as those from embryos</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<div class="captext">
-						<span><a href="">Các tế bào gốc được lập trình lại hoạt động cũng như những tế bào từ phôi</a></span>
+					<div class="col-md-6" id="card">
+						<figure class="effect-apollo" style="width: 100%"> <img
+							src="image/StellaratorLead.jpg" alt="img18" /> <figcaption>
+						<!-- <h2>Strong <span>Apollo</span></h2> -->
+						<p>The bizarre reactor that might save nuclear fusion</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Lò phản ứng có thể tiết kiệm hạt nhân
+									nhiệt hạch</a></span>
+						</div>
 					</div>
-				  </div>
+					<div class="col-md-6" id="card">
+						<figure class="effect-apollo" style="width: 100%"> <img
+							src="image/tbgoc.jpg" alt="img22" /> <figcaption> <!-- <h2>Strong <span>Apollo</span></h2> -->
+						<p>Reprogrammed stem cells work as well as those from embryos</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Các tế bào gốc được lập trình lại
+									hoạt động cũng như những tế bào từ phôi</a></span>
+						</div>
+					</div>
 				</div>
 
 				<!-- next -->
 				<div id="headtext">
-					<h3><a href="">Nghiên cứu</a></h3>
+					<h3>
+						<a href="">Nghiên cứu</a>
+					</h3>
 				</div>
 				<div class="grid">
-				  <div class="col-md-6" id="card">
-					<figure class="effect-milo" style="width: 100%">
-						<img src="image/f2.jpg" alt="img18"/>
-						<figcaption>
-							<!-- <h2>Strong <span>Apollo</span></h2> -->
-							<p>Large optical nonlinearity of indium tin oxide in its epsilon-near-zero region</p>
-							<a href="#">View more</a>
-						</figcaption>
-							
-					</figure>
-					<div class="captext">
-						<span><a href="">Sự phi tuyến quang học lớn của oxit indium oxide trong vùng epsilon-gần-zero của nó</a></span>
+					<div class="col-md-6" id="card">
+						<figure class="effect-milo" style="width: 100%"> <img
+							src="image/f2.jpg" alt="img18" /> <figcaption> <!-- <h2>Strong <span>Apollo</span></h2> -->
+						<p>Large optical nonlinearity of indium tin oxide in its
+							epsilon-near-zero region</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Sự phi tuyến quang học lớn của oxit
+									indium oxide trong vùng epsilon-gần-zero của nó</a></span>
+						</div>
 					</div>
-				  </div>
-				  <div class="col-md-6" id="card">
-					<figure class="effect-milo" style="width: 100%">
-						<img src="image/f3.jpg" alt="img22"/>
-						<figcaption>
-							<p>Resurrecting the intestinal microbiota to combat antibiotic-resistant pathogens</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<div class="captext">
-						<span><a href="">Phục hồi vi sinh vật đường ruột để chống lại các mầm bệnh kháng kháng sinh</a></span>
+					<div class="col-md-6" id="card">
+						<figure class="effect-milo" style="width: 100%"> <img
+							src="image/f3.jpg" alt="img22" /> <figcaption>
+						<p>Resurrecting the intestinal microbiota to combat
+							antibiotic-resistant pathogens</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Phục hồi vi sinh vật đường ruột để
+									chống lại các mầm bệnh kháng kháng sinh</a></span>
+						</div>
 					</div>
-				  </div>
 				</div>
 				<div class="grid">
-				  <div class="col-md-6" id="card">
-					<figure class="effect-milo" style="width: 100%">
-						<img src="image/f1.jpg" alt="img18"/>
-						<figcaption>
-							<!-- <h2>Strong <span>Apollo</span></h2> -->
-							<p>TStructures of a CRISPR-Cas9 R-loop complex primed for DNA cleavage</p>
-							<a href="#">View more</a>
-						</figcaption>
-							
-					</figure>
-					<div class="captext">
-						<span><a href="">Các cấu trúc của một phức hợp vòng lặp CRISPR-Cas9 R được primed cho sự phân tách DNA</a></span>
-					</div>	
-				  </div>
-				  <div class="col-md-6" id="card">
-					<figure class="effect-milo" style="width: 100%">
-						<img src="image/f0.jpg" alt="img22"/>
-						<figcaption>
-							<!-- <h2>Strong <span>Apollo</span></h2> -->
-							<p>An orthopoxvirus-based vaccine reduces virus excretion after MERS-CoV infection in dromedary camels</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<div class="captext">
-						<span><a href="">Một vắc-xin dựa trên vắc-xin phóng xạ làm giảm bài tiết virút sau khi nhiễm trùng MERS-CoV trong lạc đà</a></span>
+					<div class="col-md-6" id="card">
+						<figure class="effect-milo" style="width: 100%"> <img
+							src="image/f1.jpg" alt="img18" /> <figcaption> <!-- <h2>Strong <span>Apollo</span></h2> -->
+						<p>TStructures of a CRISPR-Cas9 R-loop complex primed for DNA
+							cleavage</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Các cấu trúc của một phức hợp vòng
+									lặp CRISPR-Cas9 R được primed cho sự phân tách DNA</a></span>
+						</div>
 					</div>
-				  </div>
+					<div class="col-md-6" id="card">
+						<figure class="effect-milo" style="width: 100%"> <img
+							src="image/f0.jpg" alt="img22" /> <figcaption> <!-- <h2>Strong <span>Apollo</span></h2> -->
+						<p>An orthopoxvirus-based vaccine reduces virus excretion
+							after MERS-CoV infection in dromedary camels</p>
+						<a href="#">View more</a> </figcaption> </figure>
+						<div class="captext">
+							<span><a href="">Một vắc-xin dựa trên vắc-xin phóng xạ
+									làm giảm bài tiết virút sau khi nhiễm trùng MERS-CoV trong lạc
+									đà</a></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -493,17 +513,17 @@
 								<p style="text-align: center; padding-left: 0px;">
 									<strong>Email: Tvtri1997@gmail.com</strong>
 								</p>
-								
+
 							</div>
 							<div class="col-lg-8">
 								<div class="text-center center-block">
-									<br /> <a href="#"><i
+									<br /> <a href=""><i
 										id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-									<a href="#"><i id="social-tw"
+									<a href="https://twitter.com/bootsnipp"><i id="social-tw"
 										class="fa fa-twitter-square fa-3x social"></i></a> <a
-										href="#"><i
+										href="https://plus.google.com/+Bootsnipp-page"><i
 										id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-									<a href="#"><i id="social-em"
+									<a href="mailto:bootsnipp@gmail.com"><i id="social-em"
 										class="fa fa-envelope-square fa-3x social"></i></a>
 								</div>
 							</div>
@@ -514,13 +534,13 @@
 			</div>
 		</div>
 		<!-- -- -->
-		
+
 	</div>
 
 
-<script src="JS/jquery.js" type="text/javascript"></script>
-<script src="JS/bootstrap.min.js" type="text/javascript"></script>
-	
+	<script src="JS/jquery.js" type="text/javascript"></script>
+	<script src="JS/bootstrap.min.js" type="text/javascript"></script>
+	<script>
 		$(document).ready(function() {
 			$('#i-nav').click(function() {
 				var headerHeight = $('header').css('height');
@@ -540,55 +560,51 @@
 
 		});
 	</script>
-	
+
 	<script>
-		$(document)
-				.ready(
-						function() {
+		$(document).ready(function() {
 
-							$("#user_error_message").hide();
-							$("#password_error_message").hide();
+			$("#user_error_message").hide();
+			$("#password_error_message").hide();
 
-							var error_user = false;
-							var error_password = false;
+			var error_user = false;
+			var error_password = false;
 
-							$('#user').focusout(function() {
-								check_username();
+			$('#user').focusout(function() {
+				check_username();
 
-							});
+			});
 
-							$('#password').focusout(function() {
-								check_password();
-							});
+			$('#password').focusout(function() {
+				check_password();
+			});
 
-							function check_username() {
-								var user_lenght = $('#user').val().length;
-								if (user_lenght == 0) {
+			function check_username() {
+				var user_lenght = $('#user').val().length;
+				if (user_lenght == 0) {
 
-									$("#user_error_message")
-											.html("Chưa nhập Username!");
-									$("#user_error_message").show();
-									error_user = true;
-								} else {
-									$("#user_error_message").hide();
-								}
-							}
+					$("#user_error_message").html("Chưa nhập Username!");
+					$("#user_error_message").show();
+					error_user = true;
+				} else {
+					$("#user_error_message").hide();
+				}
+			}
 
-							function check_password() {
-								var pass_lenght = $('#password').val().length;
-								if (pass_lenght == 0) {
+			function check_password() {
+				var pass_lenght = $('#password').val().length;
+				if (pass_lenght == 0) {
 
-									$("#password_error_message").html(
-											"Chưa nhập mật khẩu!");
-									$("#password_error_message").show();
-									error_password = true;
-								} else {
-									$("#password_error_message").hide();
-								}
-							}
-						});
+					$("#password_error_message").html("Chưa nhập mật khẩu!");
+					$("#password_error_message").show();
+					error_password = true;
+				} else {
+					$("#password_error_message").hide();
+				}
+			}
+		});
 	</script>
-	
+
 	<script>
 		$(document)
 				.ready(
@@ -723,6 +739,6 @@
 								}
 							}
 						});
-	</script>	
+	</script>
 </body>
 </html>

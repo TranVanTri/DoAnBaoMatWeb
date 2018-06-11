@@ -16,5 +16,8 @@
 </head>
 <body>
 	<p onmouseover="EventHandler();">'</p>
+	
+	<script src="JS/jquery.js" type="text/javascript"></script>
+	<script src="JS/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

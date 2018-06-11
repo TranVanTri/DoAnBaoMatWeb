@@ -12,13 +12,8 @@
 <link type="text/css" rel="stylesheet" href="CSS/SV_NopDeTai.css" />
 
 
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link
-			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-			rel="stylesheet">
+<link rel="stylesheet" href="CSS/bootstrap.min.css" />
+<link rel="stylesheet" href="CSS/font-awesome.min.css"/>
 
 			<title>Sinh viên nộp đề tài</title>
 </head>
@@ -454,11 +449,8 @@
 
 
 
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src="JS/jquery.js" type="text/javascript"></script>
+	<script src="JS/bootstrap.min.js" type="text/javascript"></script>
 	<script>
 		$(document).ready(function() {
 			$('#i-nav').click(function() {
