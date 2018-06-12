@@ -9,9 +9,10 @@
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <title>Sửa thông tin sinh viên</title>
 <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
-<link type="text/css" rel="stylesheet" href="CSS/SV_Thongtincanhan.css" />
-<link rel="stylesheet" href="CSS/bootstrap.min.css" />
-<link rel="stylesheet" href="CSS/font-awesome.min.css"/>
+<link  rel="stylesheet" href="CSS/SV_Thongtincanhan.css" />
+<link  rel="stylesheet" href="CSS/bootstrap.min.css" />
+<link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
+<% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 
 </head>
 <body>

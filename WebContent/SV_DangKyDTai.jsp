@@ -11,11 +11,12 @@
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<link type="text/css" rel="stylesheet" href="CSS/SV_DangKyDTai.css" />
+<link rel="stylesheet" href="CSS/SV_DangKyDTai.css" />
 <link rel="stylesheet" href="CSS/bootstrap.min.css" />
 <link rel="stylesheet" href="CSS/font-awesome.min.css"/>
-				<title>Đăng ký đề tài</title>
-				<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+<title>Đăng ký đề tài</title>
+<% response.addHeader("X-Content-Type-Options", "nosniff");%> 
+<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
 </head>
 <body>
 	<div class="container-fluid">

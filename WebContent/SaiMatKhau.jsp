@@ -10,6 +10,7 @@
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <title>Thay đổi mật khẩu thất bại</title>
 <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+<% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 </head>
 <body>
 

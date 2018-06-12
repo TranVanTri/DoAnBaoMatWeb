@@ -9,12 +9,12 @@
 <head>
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 
-<link type="text/css" rel="stylesheet" href="CSS/SV_NopDeTai.css"/>
+<link  rel="stylesheet" href="CSS/SV_NopDeTai.css"/>
 
 
-<link rel="stylesheet" href="CSS/bootstrap.min.css" />
-<link rel="stylesheet" href="CSS/font-awesome.min.css"/>
-
+<link  rel="stylesheet" href="CSS/bootstrap.min.css" />
+<link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
+<% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 <title>Nộp đề tài</title>
 <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
 </head>
