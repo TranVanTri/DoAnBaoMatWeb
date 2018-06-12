@@ -11,7 +11,7 @@ import java.sql.Statement;
 public class Connect {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 	//static final String DB_URL	= "jdbc:mysql://node6132-tkstks.ocs.opusinteractive.io/detaikh?user=root&password=CEAygz81973";
-	static final String DB_URL	= "jdbc:mysql://localhost:3306/detaikh?user=root&password=1234";
+	static final String DB_URL	= "jdbc:mysql://localhost:3306/detaikh?user=root&password=trieutrach";  
 	Connection conn;
 	Statement stsm;
 	public static Connection getConnection() {
