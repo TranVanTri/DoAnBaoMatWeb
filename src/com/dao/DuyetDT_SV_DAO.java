@@ -17,13 +17,10 @@ public class DuyetDT_SV_DAO {
 	public static CallableStatement calstmt = null;
 	public static ResultSet rs = null;
 	public int updateData(String sql) throws SQLException{
-		int kq=0;
-		
-		
-		
+		int kq=0;		
 		pst = conn.prepareStatement(sql);
-		rs = pst.executeQuery();
-		conn.close();
+		pst.execute();
+//		conn.close();
 		return kq;
 	}
 	
