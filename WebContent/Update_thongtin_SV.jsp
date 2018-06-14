@@ -305,7 +305,7 @@
 							$("#gioitinh_error_message").hide();
 							$("#email_error_message").hide();
 							$("#diachi_error_message").hide();
-
+							
 							var error_ho = false;
 							var error_ten = false;
 							var error_gioitinh = false;
@@ -364,6 +364,13 @@
 											"Nhập sai email!");
 									$("#email_error_message").show();
 									error_email = true;
+								}
+							}
+							function checkErr(){
+								if(error_diachi == true || error_dienthoai == true || error_email == true){
+									$("#btn_chinhsua").prop('disabled', true);
+								}else{
+									$("#btn_chinhsua").prop('disabled', false);
 								}
 							}
 
