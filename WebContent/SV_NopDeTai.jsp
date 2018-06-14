@@ -14,7 +14,7 @@
 <link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
 <% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 			<title>Sinh viên nộp đề tài</title>
-			<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+			<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 </head>
 <body>
 	<div class="container-fluid">

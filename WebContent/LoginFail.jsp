@@ -6,7 +6,7 @@
 <head>
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <title>Đăng nhập thất bại</title>
-<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 <% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 <script type="text/javascript">
         function EventHandler()
