@@ -11,7 +11,7 @@
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Các đề tài của sinh viên</title>
-<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 <% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 <link  rel="stylesheet" href="CSS/SV_TrangChu.css"/>
 <link  rel="stylesheet" href="CSS/bootstrap.min.css" />

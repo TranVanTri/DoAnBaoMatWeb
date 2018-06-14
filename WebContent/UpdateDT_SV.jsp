@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="CSS/bootstrap.min.css" />
 <link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
 				<title>Sửa thông tin đề tài</title>
-				<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+				<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 				<% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 </head>
 <body>

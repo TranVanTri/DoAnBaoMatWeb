@@ -8,7 +8,7 @@
 <head>
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <title>Thông tin giảng viên</title>
-<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 <% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 <link  rel="stylesheet" href="CSS/SV_Thongtincanhan.css" />
 <link  rel="stylesheet" href="CSS/bootstrap.min.css" />
