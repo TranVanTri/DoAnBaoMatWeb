@@ -8,11 +8,15 @@
 <head>
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <title>Sửa thông tin sinh viên</title>
-<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
-<link  rel="stylesheet" href="CSS/SV_Thongtincanhan.css" />
-<link  rel="stylesheet" href="CSS/bootstrap.min.css" />
-<link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
-<% response.addHeader("X-Content-Type-Options", "nosniff");%> 
+<%
+	response.addHeader("X-Frame-Options", "SAMEORIGIN");
+%>
+<link rel="stylesheet" href="CSS/SV_Thongtincanhan.css" />
+<link rel="stylesheet" href="CSS/bootstrap.min.css" />
+<link rel="stylesheet" href="CSS/font-awesome.min.css" />
+<%
+	response.addHeader("X-Content-Type-Options", "nosniff");
+%>
 
 </head>
 <body>
@@ -28,15 +32,15 @@
 					<li><a href="#">Nghiên cứu</a></li>
 					<li><a href="#">Liên hệ</a></li>
 					<%
-							DangNhap dangnhap= (DangNhap)session.getAttribute("dangnhap");
-							ThongTinCN tt = new ThongTinCN_DAO().getThongTinCaNhan(dangnhap.getUserName());
+						DangNhap dangnhap = (DangNhap) session.getAttribute("dangnhap");
+						ThongTinCN tt = new ThongTinCN_DAO().getThongTinCaNhan(dangnhap.getUserName());
 					%>
 
 					<li id="logout"><a href="TrangChuAdmin.jsp"><span
 							class="glyphicon glyphicon-log-in"></span> Thoát</a></li>
 					<li id="logout"><a href="#"><span
 							class="glyphicon glyphicon-user"></span> <%=tt.getName()%><br /></a></li>
-					
+
 
 				</ul>
 
@@ -103,9 +107,12 @@
 						<div class="dropdown">
 							<button class="dropbtn">Trang của bạn</button>
 							<div class="dropdown-content">
-								<a href="SV_ThongTinCaNhan.jsp?username=${dangnhap.userName}">Thông tin cá nhân</a> <a
-									href="SV_DangKyDTai.jsp?username=${dangnhap.userName}">Đăng kí đề tài</a> <a
-									href="SV_NopDeTai.jsp?username=${dangnhap.userName}">Nộp đề tài</a>
+								<a href="SV_ThongTinCaNhan.jsp?username=${dangnhap.userName}">Thông
+									tin cá nhân</a> <a
+									href="SV_DangKyDTai.jsp?username=${dangnhap.userName}">Đăng
+									kí đề tài</a> <a
+									href="SV_NopDeTai.jsp?username=${dangnhap.userName}">Nộp đề
+									tài</a>
 							</div>
 						</div>
 					</div>
@@ -129,19 +136,19 @@
 										<div class="card" style="position: relative;">
 											<img src="image/img_avatar.png" alt="Avatar"
 												style="width: 100%"></img>
-												<div class="container-fluid">
-													<h4>
-														<b>John Doe</b>
-													</h4>
-													<p>Architect & Engineer</p>
-												</div>
-												<div id="change_icon">
-													<button type="button" id="btn_changeicon"
-														class="btn btn-default btn-sm">
-														<span class="glyphicon glyphicon-camera"></span>
-													</button>
-												</div>
-												<!--Thay doi anh dai dien-->
+											<div class="container-fluid">
+												<h4>
+													<b>John Doe</b>
+												</h4>
+												<p>Architect & Engineer</p>
+											</div>
+											<div id="change_icon">
+												<button type="button" id="btn_changeicon"
+													class="btn btn-default btn-sm">
+													<span class="glyphicon glyphicon-camera"></span>
+												</button>
+											</div>
+											<!--Thay doi anh dai dien-->
 										</div>
 										<!--anh dai dien-->
 
@@ -161,17 +168,19 @@
 								<div class="row">
 									<div class="col-lg-12">
 										<div id="Thongtincanhan">
-											<form role="form" class="form-horizontal"  action="Update_info_SV" method="post" >
-											
+											<form role="form" class="form-horizontal"
+												action="Update_info_SV" method="post">
+
 												<div class="form-group has-feedback">
 													<label class="col-sm-2 control-label" for="form_diachi">Địa
 														chỉ: </label>
-													
+
 													<div class="col-sm-8">
-														
+
 														<input type="hidden" name="id" value="<%=tt.getId()%>"></input>
-														<input type="text" class="form-control" id="form_diachi"
-															value="<%=tt.getAddress()%>" name="diachi"></input>
+														<input type="text" maxlength="50" class="form-control"
+															id="form_diachi" value="<%=tt.getAddress()%>"
+															name="diachi"></input>
 													</div>
 
 													<p>
@@ -185,7 +194,7 @@
 														thoại: </label>
 
 													<div class="col-sm-8">
-														<input type="text" class="form-control"
+														<input type="number" class="form-control"
 															id="form_dienthoai" value="<%=tt.getSDT()%>" name="sdt"></input>
 													</div>
 
@@ -209,24 +218,24 @@
 													</p>
 												</div>
 												<div class="row" id="btn_change_info">
-													
+
 													<div class="col-sm-10 ">
-													 <input type="submit" id="btn_chinhsua"
-														class="btn btn-primary" style="float: right;" value="Lưu"/>
-														</div>
-															
-													
-													
-														
-													
+														<input type="submit" id="btn_chinhsua"
+															class="btn btn-primary" style="float: right;" value="Lưu" />
+													</div>
+
+
+
+
+
 												</div>
 											</form>
 											<!--From thong tin chinh sua-->
 
-											
+
 										</div>
 										<!--Thong tin ca nhan-->
-										
+
 									</div>
 								</div>
 							</div>
@@ -258,7 +267,7 @@
 									<strong>Design by Van Tri</strong>
 								</p>
 							</div>
-							
+
 
 						</div>
 						<hr>
@@ -305,7 +314,7 @@
 							$("#gioitinh_error_message").hide();
 							$("#email_error_message").hide();
 							$("#diachi_error_message").hide();
-							
+
 							var error_ho = false;
 							var error_ten = false;
 							var error_gioitinh = false;
@@ -314,16 +323,20 @@
 							var error_ngaysinh = false;
 							var error_email = false;
 
-							$('#form_diachi').focusout(function() {
-								check_form_diachi();
+							$('#form_diachi').blur(function() {
+								check_form_diachi();								
+								checkScript();
+								checkErr();
 							});
 
-							$('#form_dienthoai').focusout(function() {
+							$('#form_dienthoai').blur(function() {
 								check_form_dienthoai();
+								checkErr();
 							});
 
-							$('#form_email').focusout(function() {
+							$('#form_email').blur(function() {
 								check_form_email();
+								checkErr();
 							});
 
 							function check_form_diachi() {
@@ -336,13 +349,15 @@
 									error_diachi = true;
 								} else {
 									$("#diachi_error_message").hide();
+									error_diachi = false;
 								}
 							}
 
 							function check_form_dienthoai() {
 								var dienthoai_lenght = $('#form_dienthoai')
 										.val().length;
-								if (dienthoai_lenght == 0 || dienthoai_lenght > 12) {
+								if (dienthoai_lenght == 0
+										|| dienthoai_lenght > 12) {
 
 									$("#dienthoai_error_message").html(
 											"Nhập số<br> điện thoại sai!");
@@ -350,6 +365,7 @@
 									error_dienthoai = true;
 								} else {
 									$("#dienthoai_error_message").hide();
+									error_dienthoai = false;
 								}
 							}
 
@@ -359,6 +375,7 @@
 								if (pattern.test($("#form_email").val())) {
 
 									$("#email_error_message").hide();
+									error_email = false;
 								} else {
 									$("#email_error_message").html(
 											"Nhập sai email!");
@@ -366,11 +383,27 @@
 									error_email = true;
 								}
 							}
-							function checkErr(){
-								if(error_diachi == true || error_dienthoai == true || error_email == true){
+							function checkErr() {
+								if (error_diachi == true
+										|| error_dienthoai == true
+										|| error_email == true) {
 									$("#btn_chinhsua").prop('disabled', true);
-								}else{
+								} else {
 									$("#btn_chinhsua").prop('disabled', false);
+								}
+							}
+
+							function checkScript() {
+								var pattern = new RegExp('(<script>|alert|src="|<script>$(document).ready|<script type="text/javascript">)');
+								if (pattern.test($("#form_diachi").val())) {
+									$("#diachi_error_message")
+											.html(
+													"Dia chi chua noi dung khong hop le!!");
+									$("#diachi_error_message").show();
+									error_diachi = true;
+								} else {
+									$("#diachi_error_message").hide();
+									error_diachi = false;
 								}
 							}
 

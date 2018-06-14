@@ -170,7 +170,7 @@
 													<div class="col-sm-8">
 
 														<input type="hidden" name="id" value="<%=tt.getId()%>"></input>
-														<input type="text" class="form-control" id="form_diachi"
+														<input type="text" maxlength="50" class="form-control" id="form_diachi"
 															value="<%=tt.getAddress()%>" name="diachi"></input>
 													</div>
 
@@ -185,7 +185,7 @@
 														thoại: </label>
 
 													<div class="col-sm-8">
-														<input type="text" class="form-control"
+														<input type="number" class="form-control"
 															id="form_dienthoai" value="<%=tt.getSDT()%>" name="sdt"></input>
 													</div>
 
@@ -315,16 +315,20 @@
 							var error_ngaysinh = false;
 							var error_email = false;
 
-							$('#form_diachi').focusout(function() {
-								check_form_diachi();
+							$('#form_diachi').blur(function() {
+								check_form_diachi();								
+								checkScript();
+								checkErr();
 							});
 
-							$('#form_dienthoai').focusout(function() {
+							$('#form_dienthoai').blur(function() {
 								check_form_dienthoai();
+								checkErr();
 							});
 
-							$('#form_email').focusout(function() {
+							$('#form_email').blur(function() {
 								check_form_email();
+								checkErr();
 							});
 
 							function check_form_diachi() {
@@ -337,6 +341,7 @@
 									error_diachi = true;
 								} else {
 									$("#diachi_error_message").hide();
+									error_diachi = false;
 								}
 							}
 
@@ -352,6 +357,7 @@
 									error_dienthoai = true;
 								} else {
 									$("#dienthoai_error_message").hide();
+									error_dienthoai = false;
 								}
 							}
 
@@ -361,11 +367,35 @@
 								if (pattern.test($("#form_email").val())) {
 
 									$("#email_error_message").hide();
+									error_email = false;
 								} else {
 									$("#email_error_message").html(
-											"Email nhập không<br>hợp lệ!");
+											"Nhập sai email!");
 									$("#email_error_message").show();
 									error_email = true;
+								}
+							}
+							function checkErr() {
+								if (error_diachi == true
+										|| error_dienthoai == true
+										|| error_email == true) {
+									$("#btn_chinhsua").prop('disabled', true);
+								} else {
+									$("#btn_chinhsua").prop('disabled', false);
+								}
+							}
+
+							function checkScript() {
+								var pattern = new RegExp('(<script>|alert|src="|<script>$(document).ready|<script type="text/javascript">)');
+								if (pattern.test($("#form_diachi").val())) {
+									$("#diachi_error_message")
+											.html(
+													"Dia chi chua noi dung khong hop le!!");
+									$("#diachi_error_message").show();
+									error_diachi = true;
+								} else {
+									$("#diachi_error_message").hide();
+									error_diachi = false;
 								}
 							}
 
