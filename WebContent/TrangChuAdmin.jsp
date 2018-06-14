@@ -10,6 +10,10 @@
 <link  rel="stylesheet" href="CSS/SV_TrangChu.css" />
 <link  rel="stylesheet" href="CSS/bootstrap.min.css" />
 <link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
+<<<<<<< HEAD
+=======
+<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
+>>>>>>> 4ae58d04a331a15272591c6fccb1a0b51660ea0b
 <% response.addHeader("X-Content-Type-Options", "nosniff");%> 
 <% response.addHeader("X-XSS-Protection", "1; mode=block");%>  
 

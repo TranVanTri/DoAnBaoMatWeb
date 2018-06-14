@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dự án mới</title>
 <% response.addHeader("X-Content-Type-Options", "nosniff");%> 
-<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 <link  rel="stylesheet" href="CSS/SV_TrangChu.css"/>
 <link  rel="stylesheet" href="CSS/bootstrap.min.css" />
 <link  rel="stylesheet" href="CSS/font-awesome.min.css"/>

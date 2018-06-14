@@ -6,7 +6,7 @@
 <head>
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
 <title>Home</title>
-<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
+<%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 
 <link  rel="stylesheet" href="CSS/SV_TrangChu.css"/>
 <link  rel="stylesheet" href="CSS/bootstrap.min.css"/>
