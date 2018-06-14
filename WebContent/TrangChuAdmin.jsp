@@ -10,9 +10,8 @@
 <link  rel="stylesheet" href="CSS/SV_TrangChu.css" />
 <link  rel="stylesheet" href="CSS/bootstrap.min.css" />
 <link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
-<% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %> 
 <% response.addHeader("X-Content-Type-Options", "nosniff");%> 
-<% response.addHeader("X-XSS-Protection", "1; mode=block");%> 
+<% response.addHeader("X-XSS-Protection", "1; mode=block");%>  
 
 <title>Trang chủ admin</title>
 
