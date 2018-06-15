@@ -367,8 +367,7 @@
 							}
 
 							function check_form_email() {
-								var pattern = new RegExp(
-										/^[+a-zA-Z0-9._-]+@[+a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/i);
+								var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[+a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/i);
 								if (pattern.test($("#form_email").val())) {
 
 									$("#email_error_message").hide();
