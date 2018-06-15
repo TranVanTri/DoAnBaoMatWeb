@@ -167,6 +167,11 @@
 											<div class="col-lg-10">
 												<textarea class="form-control" id="noidungDT"
 													name="noidungDT" ><%=svdt.getContentSub()%></textarea>
+													<p>
+													<span class="ND_Detai_error_form"
+														id="ND_Detai_error_message" style="color: red;"></span> 
+														
+												</p>
 											</div>
 										</div>
 										<div class="row">
@@ -256,24 +261,93 @@
 				function() {
 
 					$("#Ten_Detai_error_message").hide();
-
+					$("#ND_Detai_error_message").hide();
 					var error_Ten_Detai = false;
+					var error_ND_Detai = false;
 
-					$('#tenDT').focusout(function() {
+					$("#tenDT").blur(function() {
 						check_form_tendetai();
+						checkScriptTenDT();
+						checkErr();
+					});
+					$('#noidungDT').blur(function() {
+						check_form_NDdetai();
+						checkScriptNDDT();
+						checkErr();
+						
 
 					});
 
 					function check_form_tendetai() {
 						var file_lenght = $('#tenDT').val().length;
-						if (file_lenght == 0) {
-
-							$("#Ten_Detai_error_message").html(
-									"Chưa nhập tên đề tài!");
+						
+						if (file_lenght == 0) {							
+							$("#Ten_Detai_error_message").html("Chưa nhập tên đề tài!");
 							$("#Ten_Detai_error_message").show();
-							error_file = true;
-						} else {
+							error_Ten_Detai = true;
+							
+						} else {					
 							$("#Ten_Detai_error_message").hide();
+							error_Ten_Detai = false;
+						}
+					}
+					
+					function check_form_NDdetai() {
+						var file_lenght = $('#noidungDT').val().length;
+						
+						if (file_lenght == 0) {							
+							$("#ND_Detai_error_message").html("Chưa nhập nội dung đề tài!");
+							$("#ND_Detai_error_message").show();
+							error_ND_Detai = true;
+							
+						} else {					
+							$("#ND_Detai_error_message").hide();
+							error_ND_Detai = false;
+						}
+					}
+					function checkErr() {
+						if (error_Ten_Detai == true || error_ND_Detai == true) {
+							$("#btn_update").prop('disabled', true);
+						} else {
+							$("#btn_update").prop('disabled', false);
+						}
+					}
+					function checkScriptTenDT() {
+						var pattern = new RegExp(/<[^>]+>/ig);
+						var file_lenght = $('#tenDT').val().length;
+						
+						if (file_lenght == 0) {	
+							error_Ten_Detai = true;
+							return;
+						}
+						if (pattern.test($("#tenDT").val())) {
+							$("#Ten_Detai_error_message")
+									.html(
+											"Ten de tai chua noi dung khong hop le!!");
+							$("#Ten_Detai_error_message").show();
+							error_Ten_Detai = true;
+						} else {						
+							$("#Ten_Detai_error_message").hide();
+							error_Ten_Detai = false;
+						}
+					}
+					function checkScriptNDDT() {
+						var pattern = new RegExp(/<[^>]+>/ig);
+						var file_lenght = $('#noidungDT').val().length;
+						
+						if (file_lenght == 0) {	
+							error_ND_Detai = true;
+							return;
+						}
+						if (pattern.test($("#noidungDT").val())) {
+							$("#ND_Detai_error_message")
+									.html(
+											"Nội dung đề tài chứa nội dung không hợp lệ!!");
+							$("#ND_Detai_error_message").show();
+							error_ND_Detai = true;
+						} else {						
+							$("#ND_Detai_error_message").hide();
+							error_ND_Detai = false;
 						}
 					}
 

@@ -167,9 +167,8 @@
 												<td><%=svdt.getIdSub()%></td>
 												<td>
 													
-													<a
-													title="Thông tin đề tài" href="<%=svdt.getNameSub()%>"
-													data-content="<%=svdt.getContentSub()%>"><%=svdt.getNameSub()%></a>
+													<%=svdt.getNameSub()%>
+													
 												</td>
 												<td><%=svdt.getNameteacher()%></td>
 												<td><%=svdt.getNgayDangKy()%></td>

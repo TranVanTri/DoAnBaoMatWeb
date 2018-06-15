@@ -173,7 +173,7 @@
 													%>
 												</td>
 												<td><%= list.getIdSub() %></td>
-												<td><a tittle="Thông tin đề tài" href="<%=list.getNameSub()%>" > Bam vao day</a>
+												<td><%=list.getNameSub()%>
 												</td>
 												
 												<td>

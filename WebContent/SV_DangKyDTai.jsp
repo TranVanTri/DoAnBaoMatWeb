@@ -176,9 +176,7 @@
 											<tr>
 
 												<td><%=svdt.getIdSub()%></td>
-												<td><a href="" data-toggle="popover"
-													title="Thông tin đề tài"
-													data-content="<%=svdt.getContentSub()%>"><%=svdt.getNameSub()%></a>
+												<td><%=svdt.getNameSub()%>
 												</td>
 												<td><%=svdt.getNameteacher()%></td>
 												<td><%=svdt.getNgayDangKy()%></td>

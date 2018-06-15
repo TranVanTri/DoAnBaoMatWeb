@@ -9,13 +9,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta content="text/html; charset=UTF-8; " http-equiv="Content-Type" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link  rel="stylesheet" href="CSS/SV_DangKyDTai.css" />
-<link  rel="stylesheet" href="CSS/bootstrap.min.css" />
-<link  rel="stylesheet" href="CSS/font-awesome.min.css"/>
+<link rel="stylesheet" href="CSS/SV_DangKyDTai.css" />
+<link rel="stylesheet" href="CSS/bootstrap.min.css" />
+<link rel="stylesheet" href="CSS/font-awesome.min.css" />
 <title>Tạo đề tài</title>
-<% response.addHeader("X-Content-Type-Options", "nosniff");%> 
+<%
+	response.addHeader("X-Content-Type-Options", "nosniff");
+%>
 <%-- <% response.addHeader("X-Frame-Options", "SAMEORIGIN"); %>  --%>
 </head>
 <body>
@@ -32,7 +34,7 @@
 					<li><a href="#">Liên hệ</a></li>
 
 					<%
-						DangNhap_GV dangnhap= (DangNhap_GV)session.getAttribute("dangnhap");
+						DangNhap_GV dangnhap = (DangNhap_GV) session.getAttribute("dangnhap");
 						ThongTinCN tt = new ThongTinCN_DAO().getThongTinCaNhanTea(dangnhap.getUserName());
 					%>
 
@@ -41,7 +43,7 @@
 					<li id="logout"><a href="#"><span
 							class="glyphicon glyphicon-user"></span> <%=tt.getName()%><br /></a></li>
 
-					
+
 				</ul>
 
 				</nav>
@@ -107,10 +109,12 @@
 						<div class="dropdown">
 							<button class="dropbtn">Trang của bạn</button>
 							<div class="dropdown-content">
-								<a href="GV_ThongTinCaNhan.jsp?username=${dangnhap.userName}">Thông tin cá nhân</a>
-									<a href="GV_DangKyDTai.jsp?username=${dangnhap.userName}">Đăng kí đề tài</a>
-                                    <a href="GV_NopDeTai.jsp?username=${dangnhap.userName}">Nộp đề tài</a>
-                                    <a href="DuyetDeTaiSV.jsp">Duyệt đề tài sinh viên</a>
+								<a href="GV_ThongTinCaNhan.jsp?username=${dangnhap.userName}">Thông
+									tin cá nhân</a> <a
+									href="GV_DangKyDTai.jsp?username=${dangnhap.userName}">Đăng
+									kí đề tài</a> <a
+									href="GV_NopDeTai.jsp?username=${dangnhap.userName}">Nộp đề
+									tài</a> <a href="DuyetDeTaiSV.jsp">Duyệt đề tài sinh viên</a>
 							</div>
 						</div>
 					</div>
@@ -134,38 +138,42 @@
 						<hr>
 							<div class="row">
 								<div class="col-lg-8 col-md-offset-2">
-									<form role="form" class="form-horizontal" method="post" action="Tao_Detai_GV">
+									<form role="form" class="form-horizontal" method="post"
+										action="Tao_Detai_GV">
 										<div class="form-group has-feedback">
 											<label class="col-lg-2 control-label" for="tenDT_sua"
 												style="text-align: right;">Tên đề tài:</label>
 											<div class="col-lg-10">
 												<input type="hidden" class="form-control" id="idacc"
-													name="idacc" value="<%=tt.getIdacc()%>"></input>
-												<input type="text" class="form-control" id="tenDT"
-													name="tenDT"></input>
+													name="idacc" value="<%=tt.getIdacc()%>"></input> <input
+													type="text" class="form-control" id="tenDT" name="tenDT"></input>
 												<p>
 													<span class="Ten_Detai_error_form"
-														id="Ten_Detai_error_message" style="color: red;"></span>
+														id="Ten_Detai_error_message" style="color: red;"></span> <span
+														class="Ten_Detai_error_form"
+														id="Ten_Detai_errorSR_message" style="color: red;"></span>
 												</p>
 											</div>
 
 										</div>
-										
+
 										<div class="form-group has-feedback">
 											<label class="col-lg-2 control-label" for="ChonGV"
 												style="text-align: right;">Giáo viên:</label>
-												<%
+											<%
 												ArrayList<ThongTinCN> lst = new SV_DangkiDeTai_DAO().InforTea(tt.getMajor());
-												%>
+											%>
 											<div class="col-lg-10">
-												 <select class="form-control" id="ChonGV" name="ChonGV">
-												   	<%
-												    	for(ThongTinCN ttcn : lst){	
-												    %>
-												    	<option value="<%=ttcn.getId()%>"><%=ttcn.getName() %></option>
-												    	<%} %>
-												    	
-												  </select>
+												<select class="form-control" id="ChonGV" name="ChonGV">
+													<%
+														for (ThongTinCN ttcn : lst) {
+													%>
+													<option value="<%=ttcn.getId()%>"><%=ttcn.getName()%></option>
+													<%
+														}
+													%>
+
+												</select>
 											</div>
 
 										</div>
@@ -176,17 +184,20 @@
 											<div class="col-lg-10">
 												<textarea class="form-control" id="noidungDT"
 													name="noidungDT"></textarea>
+												<p>
+													<span class="ND_Detai_error_form"
+														id="ND_Detai_error_message" style="color: red;"></span> 
+														
+												</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-lg-2">
-												
-											</div>
+											<div class="col-lg-2"></div>
 											<div class="col-lg-10">
 												<button type="submit" id="btn_insert"
 													class="btn btn-success" style="float: right;">Lưu</button>
 											</div>
-			
+
 
 										</div>
 
@@ -200,59 +211,7 @@
 					<!-- Modal -->
 
 
-					<!-- <div class="modal fade" id="ModalSuadetai" role="dialog">
-						<div class="modal-dialog" id="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Sửa thông tin</h4>
-								</div>
-								<div class="modal-body" id="modal-body">
-									<div class="row">
-										<div class="col-lg-12 ">
-
-											<form role="form" class="form-horizontal" method="post">
-												<div class="form-group has-feedback">
-													<label class="col-lg-2 control-label" for="tenDT_sua"
-														style="text-align: right;">Tên đề tài:</label>
-													<div class="col-lg-10">
-														<input type="text" class="form-control" id="tenDT_sua"
-															name="tenDT_sua"></input>
-														<p>
-															<span class="Ten_Detai_error_form"
-																id="Ten_Detai_error_message" style="color: red;"></span>
-														</p>
-													</div>
-
-												</div>
-
-												<div class="form-group has-feedback">
-													<label class="col-lg-2 control-label" for="noidungDT_sua"
-														style="text-align: right;">Nội dung: </label>
-													<div class="col-lg-10">
-														<textarea class="form-control" id="noidungDT_sua"
-															name="noidungDT_sua"></textarea>
-													</div>
-												</div>
-												<button type="submit" id="btn_update" data-dismiss="modal"
-													class="btn btn-success" style="margin-left: 475px;">Lưu</button>
-												<button type="button" class="btn" data-dismiss="modal"
-													style="float: right;">Thoát</button>
-											</form>
-											From thong tin chinh sua
-										</div>
-									</div>
-
-								</div>
-								<div class="modal-footer">
-									<button type="submit" id="btn_tao" class="btn btn-success">Tạo
-										đề tài</button>
-
-								</div>
-							</div>
-
-						</div>
-					</div> -->
+					
 			</div>
 			<!--Maincenter-->
 
@@ -274,7 +233,7 @@
 									<strong>Design by Van Tri</strong>
 								</p>
 							</div>
-							
+
 
 						</div>
 						<hr>
@@ -286,7 +245,7 @@
 
 
 
-<script src="JS/jquery.js" type="text/javascript"></script>
+	<script src="JS/jquery.js" type="text/javascript"></script>
 	<script src="JS/bootstrap.min.js" type="text/javascript"></script>
 
 
@@ -318,24 +277,93 @@
 				function() {
 
 					$("#Ten_Detai_error_message").hide();
-
+					$("#ND_Detai_error_message").hide();
 					var error_Ten_Detai = false;
+					var error_ND_Detai = false;
 
-					$('#tenDT').focusout(function() {
+					$("#tenDT").blur(function() {
 						check_form_tendetai();
+						checkScriptTenDT();
+						checkErr();
+					});
+					$('#noidungDT').blur(function() {
+						check_form_NDdetai();
+						checkScriptNDDT();
+						checkErr();
+						
 
 					});
 
 					function check_form_tendetai() {
 						var file_lenght = $('#tenDT').val().length;
-						if (file_lenght == 0) {
-
-							$("#Ten_Detai_error_message").html(
-									"Chưa nhập tên đề tài!");
+						
+						if (file_lenght == 0) {							
+							$("#Ten_Detai_error_message").html("Chưa nhập tên đề tài!");
 							$("#Ten_Detai_error_message").show();
-							error_file = true;
-						} else {
+							error_Ten_Detai = true;
+							
+						} else {					
 							$("#Ten_Detai_error_message").hide();
+							error_Ten_Detai = false;
+						}
+					}
+					
+					function check_form_NDdetai() {
+						var file_lenght = $('#noidungDT').val().length;
+						
+						if (file_lenght == 0) {							
+							$("#ND_Detai_error_message").html("Chưa nhập nội dung đề tài!");
+							$("#ND_Detai_error_message").show();
+							error_ND_Detai = true;
+							
+						} else {					
+							$("#ND_Detai_error_message").hide();
+							error_ND_Detai = false;
+						}
+					}
+					function checkErr() {
+						if (error_Ten_Detai == true || error_ND_Detai == true) {
+							$("#btn_insert").prop('disabled', true);
+						} else {
+							$("#btn_insert").prop('disabled', false);
+						}
+					}
+					function checkScriptTenDT() {
+						var pattern = new RegExp(/<[^>]+>/ig);
+						var file_lenght = $('#tenDT').val().length;
+						
+						if (file_lenght == 0) {	
+							error_Ten_Detai = true;
+							return;
+						}
+						if (pattern.test($("#tenDT").val())) {
+							$("#Ten_Detai_error_message")
+									.html(
+											"Ten de tai chua noi dung khong hop le!!");
+							$("#Ten_Detai_error_message").show();
+							error_Ten_Detai = true;
+						} else {						
+							$("#Ten_Detai_error_message").hide();
+							error_Ten_Detai = false;
+						}
+					}
+					function checkScriptNDDT() {
+						var pattern = new RegExp(/<[^>]+>/ig);
+						var file_lenght = $('#noidungDT').val().length;
+						
+						if (file_lenght == 0) {	
+							error_ND_Detai = true;
+							return;
+						}
+						if (pattern.test($("#noidungDT").val())) {
+							$("#ND_Detai_error_message")
+									.html(
+											"Nội dung đề tài chứa nội dung không hợp lệ!!");
+							$("#ND_Detai_error_message").show();
+							error_ND_Detai = true;
+						} else {						
+							$("#ND_Detai_error_message").hide();
+							error_ND_Detai = false;
 						}
 					}
 

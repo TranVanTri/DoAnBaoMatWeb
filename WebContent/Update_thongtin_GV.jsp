@@ -170,7 +170,7 @@
 													<div class="col-sm-8">
 
 														<input type="hidden" name="id" value="<%=tt.getId()%>"></input>
-														<input type="text" maxlength="50" class="form-control" id="form_diachi"
+														<input type="text"  class="form-control" id="form_diachi"
 															value="<%=tt.getAddress()%>" name="diachi"></input>
 													</div>
 
@@ -386,11 +386,16 @@
 							}
 
 							function checkScript() {
-								var pattern = new RegExp('(<script>|alert|src="|<script>$(document).ready|<script type="text/javascript">)');
+								var file_lenght = $('#form_diachi').val().length;
+								
+								if (file_lenght == 0) {	
+									error_diachi = true;
+									return;
+								}
+								var pattern = new RegExp(/<[^>]+>/ig);
 								if (pattern.test($("#form_diachi").val())) {
 									$("#diachi_error_message")
-											.html(
-													"Dia chi chua noi dung khong hop le!!");
+											.html("Dia chi chua noi dung khong hop le!!");
 									$("#diachi_error_message").show();
 									error_diachi = true;
 								} else {

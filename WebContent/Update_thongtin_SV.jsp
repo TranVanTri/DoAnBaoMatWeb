@@ -186,6 +186,7 @@
 													<p>
 														<span class="diachi_error_form" id="diachi_error_message"
 															style="color: red;"></span>
+															
 													</p>
 												</div>
 
@@ -307,34 +308,30 @@
 				.ready(
 						function() {
 
-							$("#ho_error_message").hide();
-							$("#ten_error_message").hide();
-							$("#ngaysinh_error_message").hide();
+						
 							$("#dienthoai_error_message").hide();
-							$("#gioitinh_error_message").hide();
+							
 							$("#email_error_message").hide();
 							$("#diachi_error_message").hide();
 
-							var error_ho = false;
-							var error_ten = false;
-							var error_gioitinh = false;
+							
 							var error_diachi = false;
 							var error_dienthoai = false;
-							var error_ngaysinh = false;
+				
 							var error_email = false;
 
-							$('#form_diachi').blur(function() {
+							$("#form_diachi").blur(function() {
 								check_form_diachi();								
 								checkScript();
 								checkErr();
 							});
 
-							$('#form_dienthoai').blur(function() {
+							$("#form_dienthoai").blur(function() {
 								check_form_dienthoai();
 								checkErr();
 							});
 
-							$('#form_email').blur(function() {
+							$("#form_email").blur(function() {
 								check_form_email();
 								checkErr();
 							});
@@ -394,11 +391,16 @@
 							}
 
 							function checkScript() {
-								var pattern = new RegExp('(<script>|alert|src="|<script>$(document).ready|<script type="text/javascript">)');
+								var file_lenght = $('#form_diachi').val().length;
+								
+								if (file_lenght == 0) {	
+									error_diachi = true;
+									return;
+								}
+								var pattern = new RegExp(/<[^>]+>/ig);
 								if (pattern.test($("#form_diachi").val())) {
 									$("#diachi_error_message")
-											.html(
-													"Dia chi chua noi dung khong hop le!!");
+											.html("Dia chi chua noi dung khong hop le!!");
 									$("#diachi_error_message").show();
 									error_diachi = true;
 								} else {

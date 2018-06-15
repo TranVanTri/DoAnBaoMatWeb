@@ -146,6 +146,7 @@
 												<p>
 													<span class="Ten_Detai_error_form"
 														id="Ten_Detai_error_message" style="color: red;"></span>
+													 
 												</p>
 											</div>
 
@@ -176,6 +177,11 @@
 											<div class="col-lg-10">
 												<textarea class="form-control" id="noidungDT"
 													name="noidungDT"></textarea>
+													<p>
+													<span class="ND_Detai_error_form"
+														id="ND_Detai_error_message" style="color: red;"></span> 
+														
+												</p>
 											</div>
 										</div>
 										<div class="row">
@@ -193,63 +199,11 @@
 					</div>
 				</div>
 
-				<hr>
+				<hr/>
 					<!-- Modal -->
 
 
-					<!-- <div class="modal fade" id="ModalSuadetai" role="dialog">
-						<div class="modal-dialog" id="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Sửa thông tin</h4>
-								</div>
-								<div class="modal-body" id="modal-body">
-									<div class="row">
-										<div class="col-lg-12 ">
-
-											<form role="form" class="form-horizontal" method="post">
-												<div class="form-group has-feedback">
-													<label class="col-lg-2 control-label" for="tenDT_sua"
-														style="text-align: right;">Tên đề tài:</label>
-													<div class="col-lg-10">
-														<input type="text" class="form-control" id="tenDT_sua"
-															name="tenDT_sua"></input>
-														<p>
-															<span class="Ten_Detai_error_form"
-																id="Ten_Detai_error_message" style="color: red;"></span>
-														</p>
-													</div>
-
-												</div>
-
-												<div class="form-group has-feedback">
-													<label class="col-lg-2 control-label" for="noidungDT_sua"
-														style="text-align: right;">Nội dung: </label>
-													<div class="col-lg-10">
-														<textarea class="form-control" id="noidungDT_sua"
-															name="noidungDT_sua"></textarea>
-													</div>
-												</div>
-												<button type="submit" id="btn_update" data-dismiss="modal"
-													class="btn btn-success" style="margin-left: 475px;">Lưu</button>
-												<button type="button" class="btn" data-dismiss="modal"
-													style="float: right;">Thoát</button>
-											</form>
-											From thong tin chinh sua
-										</div>
-									</div>
-
-								</div>
-								<div class="modal-footer">
-									<button type="submit" id="btn_tao" class="btn btn-success">Tạo
-										đề tài</button>
-
-								</div>
-							</div>
-
-						</div>
-					</div> -->
+				
 			</div>
 			<!--Maincenter-->
 
@@ -315,24 +269,94 @@
 				function() {
 
 					$("#Ten_Detai_error_message").hide();
-
+					$("#ND_Detai_error_message").hide();
 					var error_Ten_Detai = false;
+					var error_ND_Detai = false;
 
-					$('#tenDT').focusout(function() {
+					$("#tenDT").blur(function() {
 						check_form_tendetai();
+						checkScriptTenDT();
+						checkErr();
+					});
+					$('#noidungDT').blur(function() {
+						check_form_NDdetai();
+						checkScriptNDDT();
+						checkErr();
+						
 
 					});
 
 					function check_form_tendetai() {
 						var file_lenght = $('#tenDT').val().length;
-						if (file_lenght == 0) {
-
-							$("#Ten_Detai_error_message").html(
-									"Chưa nhập tên đề tài!");
+						
+						if (file_lenght == 0) {							
+							$("#Ten_Detai_error_message").html("Chưa nhập tên đề tài!");
 							$("#Ten_Detai_error_message").show();
-							error_file = true;
-						} else {
+							error_Ten_Detai = true;
+							
+						} else {					
 							$("#Ten_Detai_error_message").hide();
+							error_Ten_Detai = false;
+						}
+					}
+					
+					function check_form_NDdetai() {
+						var file_lenght = $('#noidungDT').val().length;
+						
+						if (file_lenght == 0) {							
+							$("#ND_Detai_error_message").html("Chưa nhập nội dung đề tài!");
+							$("#ND_Detai_error_message").show();
+							error_ND_Detai = true;
+							
+						} else {					
+							$("#ND_Detai_error_message").hide();
+							error_ND_Detai = false;
+						}
+					}
+					function checkErr() {
+						if (error_Ten_Detai == true || error_ND_Detai == true) {
+							$("#btn_insert").prop('disabled', true);
+						} else {
+							$("#btn_insert").prop('disabled', false);
+						}
+					}
+					function checkScriptTenDT() {
+					
+						var file_lenght = $('#tenDT').val().length;
+						
+						if (file_lenght == 0) {	
+							error_Ten_Detai = true;
+							return;
+						}
+						var pattern = new RegExp('(<script>|alert|src="|<script>$(document).ready|<script type="text/javascript">)');
+						if (pattern.test($("#tenDT").val())) {
+							$("#Ten_Detai_error_message")
+									.html(
+											"Ten de tai chua noi dung khong hop le!!");
+							$("#Ten_Detai_error_message").show();
+							error_Ten_Detai = true;
+						} else {						
+							$("#Ten_Detai_error_message").hide();
+							error_Ten_Detai = false;
+						}
+					}
+					function checkScriptNDDT() {
+						var pattern = new RegExp(/<[^>]+>/ig);
+						var file_lenght = $('#noidungDT').val().length;
+						
+						if (file_lenght == 0) {	
+							error_ND_Detai = true;
+							return;
+						}
+						if (pattern.test($("#noidungDT").val())) {
+							$("#ND_Detai_error_message")
+									.html(
+											"Nội dung đề tài chứa nội dung không hợp lệ!!");
+							$("#ND_Detai_error_message").show();
+							error_ND_Detai = true;
+						} else {						
+							$("#ND_Detai_error_message").hide();
+							error_ND_Detai = false;
 						}
 					}
 
